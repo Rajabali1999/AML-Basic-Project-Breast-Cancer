@@ -1,10 +1,9 @@
 # AML-Basic-Project-Breast-Cancer#  
 
-# Basic Logistic Regression on Breast Cancer Wisconsin Dataset#
+ Basic Logistic Regression on Breast Cancer Wisconsin Dataset
 
-# Binary Classification Using Logistic Regression on the Breast Cancer Wisconsin (Diagnostic) Dataset#
-
-
+ Binary Classification Using Logistic Regression on the Breast Cancer Wisconsin (Diagnostic) Dataset
+ 
 I selected the BASIC-2 Breast Cancer Wisconsin (Diagnostic) dataset from the Suggested Datasets document for my AML-BASIC project. The dataset contains 569 samples, each with 30 nuclear features (e.g., radius, texture) derived from FNA biopsies
 
 # Key Challenges #
