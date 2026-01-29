@@ -1,38 +1,51 @@
-# AML-Basic-Project-Breast-Cancer
-Basic Logistic Regression on Breast Cancer Wisconsin Dataset
+# AML-Basic-Project-Breast-Cancer#  
 
-# Breast Cancer Benign vs Malignant Diagnosis: Logistic Regression Analysis (Binary Classification)
-I selected the BASIC - 2 Breast Cancer Wisconsin (Diagnostic) dataset from the **Suggested Datasets document as my AML-BASIC project**.
+# Basic Logistic Regression on Breast Cancer Wisconsin Dataset#
 
-In this dataset, there are 569 samples in total, and each sample contains 30 nuclear features (e.g., radius, texture). 
-The data is derived from fine needle aspiration biopsies (FNA biopsies).
+# Binary Classification Using Logistic Regression on the Breast Cancer Wisconsin (Diagnostic) Dataset#
 
-**In this project, I will address the following challenges**:
 
-Feature engineering for related indicators (mean values, standard errors, extreme values, etc.)
-Handling class imbalance (357 benign samples vs. 212 malignant samples).
+I selected the BASIC-2 Breast Cancer Wisconsin (Diagnostic) dataset from the Suggested Datasets document for my AML-BASIC project. The dataset contains 569 samples, each with 30 nuclear features (e.g., radius, texture) derived from FNA biopsies
 
-**Additionally**
-Based on the first submitted version and your feedback, I have added a complete workflow covering hypothesis, data exploration, baseline comparison, model building, and result interpretation.
+# Key Challenges #
 
-The report format is also optimized by combining Markdown cells with executable code blocks for better readability.
-Based on your email feedback, this version mainly improves the following aspects:
+>Feature engineering for derived indicators (mean, standard error, worst values, etc.)
 
-# 1.Added Baseline
-Introduced a DummyClassifier as a baseline model to provide a clear benchmark for evaluating the logistic regression results (accuracy ~ 63% vs ~97%).
+>Addressing class imbalance (357 benign vs 212 malignant samples)
 
-# 2 Improved EDA and Data Processing
-Enhanced the EDA by visualizing distributions, label imbalance, and correlation heatmaps.
-Added automated removal of highly correlated features (corr > 0.9) to reduce multicollinearity risks and make the dataset cleaner.
+# Workflow Overview
 
-# 3 Improved Presentation Format
-Replaced plain text explanations with a clear Markdown + Code + Explain structure, making the notebook more readable and modular.
+This version integrates a complete workflow covering hypothesis, EDA, baseline comparison, model building, and result interpretation. The report now uses Markdown + code blocks for clarity and readability.
 
-# 4 Improved Result Analysis & Extended Discussion
-Added a final discussion section covering limitations, potential risks, and ideas for extending the pipeline.
-This lays a foundation for further improvements in AML-Advanced projects.
+# Major Updates:
 
-# Other improvements or reservations:
-More Appropriate Class Imbalance Handling
-Stricter Feature Standardization Steps
-More Comprehensive Performance Metrics
+Baseline Model Introduction
+
+Added a DummyClassifier as a benchmark.
+
+Accuracy comparison: ~63% (Dummy) vs ~97% (Logistic Regression).
+
+# Enhanced Exploratory Data Analysis & Preprocessing
+
+Visualized feature distributions, class imbalance, and correlation heatmaps.
+
+Automatically removed highly correlated features (corr > 0.9) to reduce multicollinearity.
+
+# Refined Report Structure
+
+Clear modular format: Markdown explanations + code + interpretation.
+
+# Expanded Results & Discussion
+
+Discussed limitations, risks, and potential pipeline improvements.
+
+Sets the stage for AML-Advanced projects.
+
+# Additional Enhancements
+
+Improved class imbalance handling
+
+Stricter feature standardization
+
+More comprehensive performance metrics
+
