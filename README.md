@@ -1,14 +1,59 @@
 # AML-Basic-Project-Breast-Cancer#  
 
- Breast Cancer Benign vs Malignant Diagnosis: Logistic Regression Analysis (Binary Classification)
+# Project Overview
+
+This project uses machine learning to perform binary classification for breast cancer diagnosis. The model predicts whether a tumor is  **benign or malignant** based on numerical features from the **Wisconsin Diagnostic Breast Cancer Dataset**.
+
+The implementation is done using Python and the Scikit-learn library, with Logistic Regression as the primary classification algorithm.
+
+The goal of this project is to demonstrate how machine learning algorithms can be applied to structured medical data to build predictive models for breast cancer diagnosis
  
-I selected the BASIC-2 Breast Cancer Wisconsin (Diagnostic) dataset from the Suggested Datasets document for my AML-BASIC project. The dataset contains 569 samples, each with 30 nuclear features (e.g., radius, texture) derived from FNA biopsies
+# DataSet
+
+The dataset used in this project is the Wisconsin Diagnostic Breast Cancer (WDBC) Dataset, available from the UCI Machine Learning Repository.
+
+The dataset contains measurements computed from digitized images of fine needle aspirate (FNA) of breast masses.
+
+Dataset Information
+
+**Total Samples**: 569
+
+**Total Features**: 30 numerical features
+
+Target Classes:
+
+**M** – Malignant
+
+**B** – Benign
+
+Each feature describes characteristics of the cell nuclei, including:
+
+
+Radius
+
+Texture
+
+Perimeter
+
+Area
+
+Smoothness
+
+Compactness
+
+Concavity
+
+Symmetry
+
+Fractal Dimension
+
 
 # Key Challenges #
 
 >Feature engineering for derived indicators (mean, standard error, worst values, etc.)
 
 >Addressing class imbalance (357 benign vs 212 malignant samples)
+
 
 # Workflow Overview
 
@@ -22,7 +67,7 @@ This version integrates a complete workflow covering hypothesis, EDA, baseline c
  
  4. Data Preparations
 
- 5.Baseline：Dummy Classifier
+ 5. Baseline：Dummy Classifier
  
  6. Feature Standardization
   
@@ -63,7 +108,11 @@ These are used for data handling and visualization:
 
 3. matplotlib
 
-4 seaborn
+4. seaborn
+   
+5. Juptyer Note Book
+
+6. Scikit-learn
 
 
 # Enhanced Exploratory Data Analysis & Preprocessing
