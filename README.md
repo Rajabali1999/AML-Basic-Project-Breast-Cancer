@@ -35,6 +35,27 @@ Accuracy comparison: ~63% (Dummy) vs ~97% (Logistic Regression).
 
 # Machine learning Module used
 
+Two classification algorithms were implemented:
+
+1.Logistic Regression 
+2.Dummy Classifier (baseline model)
+
+The dataset was split into training and testing sets using train_test_split.
+Feature scaling was applied using StandardScaler.
+Model performance was evaluated using confusion matrix, classification report, ROC curve, and AUC score.
+
+
+# Other Supporting Librarier
+
+These are used for data handling and visualization:
+
+1. numpy
+
+2. pandas
+
+3. matplotlib
+
+4 seaborn
 
 
 # Enhanced Exploratory Data Analysis & Preprocessing
