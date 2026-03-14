@@ -14,6 +14,16 @@ I selected the BASIC-2 Breast Cancer Wisconsin (Diagnostic) dataset from the Sug
 
 This version integrates a complete workflow covering hypothesis, EDA, baseline comparison, model building, and result interpretation. The report now uses Markdown + code blocks for clarity and readability.
 
+1. Hypothsesis
+2.  Data Loading and Preliminary Exploration
+3. Data Exploration (EDA)
+4. Data Preparations
+5. Baseline：Dummy Classifier
+6.  Feature Standardization
+7.  Logistic Regression Modeling
+8.  Result Evaluation 9. ROC Curve and AUC
+9.   Discussion
+
 # Major Updates:
 
 Baseline Model Introduction
@@ -21,6 +31,11 @@ Baseline Model Introduction
 Added a DummyClassifier as a benchmark.
 
 Accuracy comparison: ~63% (Dummy) vs ~97% (Logistic Regression).
+
+
+# Machine learning Module used
+
+
 
 # Enhanced Exploratory Data Analysis & Preprocessing
 
