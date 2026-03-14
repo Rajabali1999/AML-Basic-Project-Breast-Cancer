@@ -1,141 +1,149 @@
-# AML-Basic-Project-Breast-Cancer#  
+
+# AML Basic Project Breast Cancer Prediction
 
 # Project Overview
 
-This project uses machine learning to perform binary classification for breast cancer diagnosis. The model predicts whether a tumor is  **benign or malignant** based on numerical features from the **Wisconsin Diagnostic Breast Cancer Dataset**.
+This project applies machine learning to perform **binary classification** for breast cancer diagnosis. The model predicts whether a tumor is **benign** or **malignant** using numerical features from the **Wisconsin Diagnostic Breast Cancer Dataset**.
 
-The implementation is done using Python and the Scikit-learn library, with Logistic Regression as the primary classification algorithm.
+The implementation is developed using **Python** and the **Scikit-learn** machine learning library, with **Logistic Regression** as the primary classification algorithm.
 
-The goal of this project is to demonstrate how machine learning algorithms can be applied to structured medical data to build predictive models for breast cancer diagnosis
- 
-# DataSet
+The goal of this project is to demonstrate how machine learning algorithms can be applied to structured medical data to build predictive models for breast cancer diagnosis.
 
-The dataset used in this project is the Wisconsin Diagnostic Breast Cancer (WDBC) Dataset, available from the UCI Machine Learning Repository.
+
+# Dataset
+
+The dataset used in this project is the **Wisconsin Diagnostic Breast Cancer (WDBC) Dataset**, available from the **UCI Machine Learning Repository**.
 
 The dataset contains measurements computed from digitized images of fine needle aspirate (FNA) of breast masses.
 
-Dataset Information
+# Dataset Information
 
-**Total Samples**: 569
+* **Total Samples:** 569
+* **Total Features:** 30 numerical features
 
-**Total Features**: 30 numerical features
+### Target Classes
 
-Target Classes:
+* **M** – Malignant
+* **B** – Benign
 
-**M** – Malignant
+### Example Features
 
-**B** – Benign
-
-Each feature describes characteristics of the cell nuclei, including:
-
-
-Radius
-
-Texture
-
-Perimeter
-
-Area
-
-Smoothness
-
-Compactness
-
-Concavity
-
-Symmetry
-
-Fractal Dimension
+* Radius
+* Texture
+* Perimeter
+* Area
+* Smoothness
+* Compactness
+* Concavity
+* Symmetry
+* Fractal Dimension
 
 
-# Key Challenges #
+# Key Challenges
 
->Feature engineering for derived indicators (mean, standard error, worst values, etc.)
+* Feature engineering for derived indicators (mean, standard error, worst values)
+* Addressing class imbalance (**357 benign vs 212 malignant samples**)
 
->Addressing class imbalance (357 benign vs 212 malignant samples)
-
+---
 
 # Workflow Overview
 
-This version integrates a complete workflow covering hypothesis, EDA, baseline comparison, model building, and result interpretation. The report now uses Markdown + code blocks for clarity and readability.
+The project follows a complete machine learning workflow including hypothesis formulation, exploratory data analysis, baseline comparison, model development, and evaluation.
 
- 1. Hypothsesis
+1. Hypothesis
+2. Data Loading and Preliminary Exploration
+3. Exploratory Data Analysis (EDA)
+4. Data Preparation
+5. Baseline Model – Dummy Classifier
+6. Feature Standardization
+7. Logistic Regression Modeling
+8. Result Evaluation
+9. ROC Curve and AUC Analysis
+10. Discussion
 
- 2. Data Loading and Preliminary Exploration
+---
 
- 3.  Data Exploration (EDA)
- 
- 4. Data Preparations
+# Major Updates
 
- 5. Baseline：Dummy Classifier
- 
- 6. Feature Standardization
-  
- 7. Logistic Regression Modeling
-     
- 8.  Result Evaluation 9. ROC Curve and AUC
-  
- 9.   Discussion
+### Baseline Model Introduction
 
-# Major Updates:
+A **Dummy Classifier** was added as a benchmark model.
 
-Baseline Model Introduction
+**Accuracy Comparison**
 
-Added a DummyClassifier as a benchmark.
+* Dummy Classifier: ~63%
+* Logistic Regression: ~97%
 
-Accuracy comparison: ~63% (Dummy) vs ~97% (Logistic Regression).
+---
 
-
-# Machine learning Module used
+# Machine Learning Models Used
 
 Two classification algorithms were implemented:
 
-1.Logistic Regression 
-2.Dummy Classifier (baseline model)
+1. **Logistic Regression**
+2. **Dummy Classifier** (Baseline Model)
 
-The dataset was split into training and testing sets using train_test_split.
-Feature scaling was applied using StandardScaler.
-Model performance was evaluated using confusion matrix, classification report, ROC curve, and AUC score.
+### Model Training Steps
 
+* Dataset split using `train_test_split`
+* Feature scaling using `StandardScaler`
+* Model evaluation using:
 
-# Other Supporting Librarier
+  * Confusion Matrix
+  * Classification Report
+  * ROC Curve
+  * AUC Score
 
-These are used for data handling and visualization:
+---
 
-1. numpy
+# Supporting Libraries
 
-2. pandas
+These libraries were used for data processing and visualization:
 
-3. matplotlib
+* **NumPy**
+* **Pandas**
+* **Matplotlib**
+* **Seaborn**
+* **Jupyter Notebook**
+* **Scikit-learn**
 
-4. seaborn
-   
-5. Juptyer Note Book
-
-6. Scikit-learn
-
+---
 
 # Enhanced Exploratory Data Analysis & Preprocessing
 
-Visualized feature distributions, class imbalance, and correlation heatmaps.
+* Visualized feature distributions and class imbalance
+* Created correlation heatmaps to analyze feature relationships
+* Automatically removed highly correlated features (**correlation > 0.9**) to reduce multicollinearity
 
-Automatically removed highly correlated features (corr > 0.9) to reduce multicollinearity.
+---
 
 # Refined Report Structure
 
-Clear modular format: Markdown explanations + code + interpretation.
+The project report follows a **clear modular format** combining:
+
+* Markdown explanations
+* Python code blocks
+* Model interpretation and analysis
+
+---
 
 # Expanded Results & Discussion
 
-Discussed limitations, risks, and potential pipeline improvements.
+The results section includes discussion of:
 
-Sets the stage for AML-Advanced projects.
+* Model performance
+* Dataset limitations
+* Risk factors in prediction
+* Possible improvements to the machine learning pipeline
+
+This work also prepares the foundation for more advanced machine learning implementations in future AML projects.
+
+---
 
 # Additional Enhancements
 
-Improved class imbalance handling
+* Improved handling of class imbalance
+* Strict feature standardization
+* More comprehensive performance evaluation metrics
 
-Stricter feature standardization
-
-More comprehensive performance metrics
-
+---
