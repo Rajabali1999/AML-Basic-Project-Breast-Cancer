@@ -1,5 +1,5 @@
 
- **Breast Cancer Diagnosis: Benign vs Malignant using Logistic Regression (Binary Classification)**
+ # Breast Cancer Diagnosis: Benign vs Malignant using Logistic Regression (Binary Classification)**
 
 For this AML-BASIC project, the Breast Cancer **Wisconsin (Diagnostic) dataset** was selected from the official Suggested Datasets document.
 
