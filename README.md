@@ -77,9 +77,9 @@ Introduction
 5. Baseline Model – Dummy Classifier
 6. Feature Standardization
 7. Logistic Regression Modeling
-8. .Performance evaluation using multiple metrics**
+8. .Performance evaluation using multiple metrics
 9. Result Evaluation
-10. Interpretation of model results and coefficients*
+10. Interpretation of model results and coefficients
 11. ROC Curve and AUC Analysis
 12. BASELINE COMPARISON
 13. Discussion
